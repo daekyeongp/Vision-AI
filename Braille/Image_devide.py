@@ -15,12 +15,12 @@ class img_devide():
 
     def create_dir(self):
         try:
-            os.mkdir('./test/a')
-            print('create new dir')
+            os.mkdir('./test/sentence')
+            print('create dir')
         except:
             print('already exist')
             pass
-        self.path = './test/a'
+        self.path = './test/sentence'
 
     def devide_img(self):
         self.img = Image.open(self.img_path)
